@@ -1,0 +1,50 @@
+# ! https://github.com/nikitakitsune/.editorconfig 
+#   https://editorconfig.org (standart with)
+
+# A special property that should be specified at the top of the file outside of any sectionsSet to true to stop .editor config file search on current file
+root = true 
+
+[*] # for all fyles that support unix-compatible line breaks
+end_of_line = lf # Line ending file format
+insert_final_newline = false # Denotes whether file should end with a newline
+charset = utf-8 # File character encoding
+
+[*.{css,sass,scss,less,styl}] # CSS & CSS predprocessors
+indent_style = space # Possible values - tab, space
+indent_size = 2 # Indentation size in single-spaced characters
+trim_trailing_whitespace = true # Denotes whether to trim whitespace at the end of lines
+
+[*.css.map] # below is the content for css.map fyles 
+indent_size = 1 # Indentation size in single-spaced characters
+trim_trailing_whitespace = true # Denotes whether to trim whitespace at the end of lines
+
+[*.{js,jsm,jsx}] # JavaScript files
+indent_style = space # Possible values - tab, space
+indent_size = 2 # Indentation size in single-spaced characters
+trim_trailing_whitespace = true # Denotes whether to trim whitespace at the end of lines
+
+[*.{ts,tsx}] # TypeScript files
+indent_style = space # Possible values - tab, space
+indent_size = 2 # Indentation size in single-spaced characters
+trim_trailing_whitespace = true # Denotes whether to trim whitespace at the end of lines
+
+[*.{json,json5,webmanifest}] # Json fyles
+indent_size = 2 # Indentation size in single-spaced characters
+
+[*.{html,htm,htmls}] # below is the content for markup's fyles
+indent_style = space # Possible values - tab, space
+indent_size = 2 # Indentation size in single-spaced characters
+trim_trailing_whitespace = true # Denotes whether to trim whitespace at the end of lines
+
+[*.svg] # below is the content for svg fyles 
+indent_style = space # Possible values - tab, space
+indent_size = 2 # Indentation size in single-spaced characters
+
+[*.md] 
+max_line_lenght = 0 # Max line lenght
+trim_trailing_whitespace = false # Denotes whether to trim whitespace at the end of lines
+indent_size = 2 # Indentation size in single-spaced characters
+indent_style = space # Possible values - tab, space
+
+[COMIT_EDITING]
+max_line_lenght = 0 # Max line lenght
